@@ -1,0 +1,122 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f0f4f8;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields */
+  input[type='text'],
+  input[type='number'],
+  input[type='file'] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input[type='file'] {
+    background-color: #f9f9f9;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1rem;
+    color: #ff9800;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .container {
+      padding: 15px;
+    }
+  
+    input[type='text'],
+    input[type='number'],
+    input[type='file'],
+    button {
+      font-size: 1rem;
+    }
+  
+    button {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    input[type='text'],
+    input[type='number'],
+    input[type='file'],
+    button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+    
+    .container {
+      max-width: 90%;
+      padding: 10px;
+    }
+  }
+  
